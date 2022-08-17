@@ -1,32 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="#ccc"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".BlankFragment">
 
     <Button
-        android:id="@+id/Btn01"
+        android:id="@+id/Btn02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Activity Button" />
+        android:text="Fragment Button" />
 
     <TextView
-        android:id="@+id/Text01"
+        android:id="@+id/Text02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Activity"
+        android:text="Fragment"
         android:textSize="22sp" />
-
-    <fragment
-        android:id="@+id/fragment01"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:name="com.notepad96.viewbinding.BlankFragment"
-        />
 
 
 </LinearLayout>
