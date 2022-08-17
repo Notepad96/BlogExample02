@@ -1,8 +1,7 @@
 package com.notepad96.viewbinding
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.notepad96.viewbinding.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
