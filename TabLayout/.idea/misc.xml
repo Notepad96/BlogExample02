@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/tlsgh/BlogExample02/TabLayout/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/tlsgh/BlogExample02/TabLayout/app/src/main/res/layout/activity_main.xml" value="0.20506329113924052" />
+        <entry key="..\:/Users/tlsgh/BlogExample02/TabLayout/app/src/main/res/layout/fragment_page01.xml" value="0.3515625" />
+        <entry key="..\:/Users/tlsgh/BlogExample02/TabLayout/app/src/main/res/layout/fragment_page02.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/tlsgh/BlogExample02/TabLayout/app/src/main/res/layout/fragment_page03.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>

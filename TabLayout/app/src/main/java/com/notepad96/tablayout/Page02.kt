@@ -1,20 +1,20 @@
 package com.notepad96.tablayout
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.notepad96.tablayout.databinding.FragmentPage01Binding
+import androidx.fragment.app.Fragment
+import com.notepad96.tablayout.databinding.FragmentPage02Binding
 
-class Page01 : Fragment() {
-    lateinit var binding: FragmentPage01Binding
+class Page02 : Fragment() {
+    lateinit var binding: FragmentPage02Binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentPage01Binding.inflate(inflater, container, false)
+        binding = FragmentPage02Binding.inflate(inflater, container, false)
 
         return binding.root
     }
