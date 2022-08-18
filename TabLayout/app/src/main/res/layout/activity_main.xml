@@ -19,14 +19,14 @@
         android:layout_height="wrap_content"
 
         android:background="#F6E4E4"
+        app:tabRippleColor="#FF1313"
         app:tabGravity="fill"
-        app:tabIconTint="@color/unselect"
+
+        app:tabIconTint="@color/menu_selected"
+        app:tabTextColor="@color/menu_selected"
+
         app:tabIndicatorColor="@color/select"
         app:tabIndicatorHeight="5dp"
-        app:tabRippleColor="#FF1313"
-        app:tabSelectedTextColor="@color/select"
-        app:tabTextColor="@color/unselect"
-
         app:tabIndicatorGravity="top"
         />
 
