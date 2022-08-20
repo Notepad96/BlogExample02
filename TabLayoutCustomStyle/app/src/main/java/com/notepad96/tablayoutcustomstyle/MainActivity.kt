@@ -1,10 +1,9 @@
 package com.notepad96.tablayoutcustomstyle
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -72,7 +71,7 @@ class MainActivity : AppCompatActivity() {
 
     // TabLayout Tab 사이 간격 부여
     private fun setTabItemMargin(tabLayout: TabLayout, marginEnd: Int = 20) {
-        for(i in 0 until 3) {
+        for(i in tabTextList.indices) {
             val tabs = tabLayout.getChildAt(0) as ViewGroup
             for(i in 0 until tabs.childCount) {
                 val tab = tabs.getChildAt(i)
