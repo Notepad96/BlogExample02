@@ -7,18 +7,12 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager01"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"/>
-
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
 
-        android:background="#F6E4E4"
         app:tabGravity="start"
         app:tabBackground="@drawable/tab_style"
         app:tabTextAppearance="@style/TabLayoutTextSize"
@@ -27,8 +21,43 @@
         app:tabTextColor="@color/menu_select"
 
         app:tabIndicatorHeight="0dp"
-        app:tabIndicatorGravity="top"
         />
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginVertical="5dp"
+
+        app:tabGravity="start"
+        app:tabMode="fixed"
+        app:tabBackground="@drawable/tab_style02"
+        app:tabTextAppearance="@style/TabLayoutTextSize"
+
+        app:tabTextColor="@color/menu_select"
+
+        app:tabIndicatorHeight="0dp"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginVertical="5dp"
+
+        app:tabGravity="start"
+        app:tabBackground="@drawable/tab_style03"
+        app:tabTextAppearance="@style/TabLayoutTextSize"
+
+        app:tabTextColor="@color/white"
+
+        app:tabIndicatorHeight="0dp"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
 
 </LinearLayout>
