@@ -13,4 +13,8 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="TabLayoutTextSize" parent="TextAppearance.Design.Tab" >
+        <item name="android:textSize">12sp</item>
+    </style>
 </resources>

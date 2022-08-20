@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
             tab.setIcon(tabIconList[pos])
         }.attach()
 
+        // 처음, 마지막 페이지간 양방향 이동 가능
         binding.viewPager01.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
             var currentState = 0
             var currentPos = 0
