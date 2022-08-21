@@ -6,7 +6,7 @@ plugins {
 android {
     compileSdk 32
 
-    dataBinding.enabled = true
+    buildFeatures.dataBinding = true
 
     defaultConfig {
         applicationId "com.notepad96.databinding"
