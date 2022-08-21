@@ -1,11 +1,11 @@
-# Topic : Button Click Event
+# Topic : Data Binding
 
 
-### https://notepad96.tistory.com/entry/Android-Kotlin-Click-Event
+### https://notepad96.tistory.com/185
 
 
 <br><br>
 
 # Preview
 
-![preview](preview.gif)
+![preview](preview.png)
