@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/tlsgh/BlogExample02/RecyclerViewMoveTop/app/src/main/res/drawable/ic_baseline_arrow_upward_24.xml" value="0.1955" />
         <entry key="..\:/Users/tlsgh/BlogExample02/RecyclerViewMoveTop/app/src/main/res/layout/activity_main.xml" value="0.36633663366336633" />
+        <entry key="..\:/Users/tlsgh/BlogExample02/RecyclerViewMoveTop/app/src/main/res/layout/item_list.xml" value="0.1875" />
       </map>
     </option>
   </component>
