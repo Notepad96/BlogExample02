@@ -1,7 +1,7 @@
-# Topic : Button Click Event
+# Topic : RecyclerView Move to Top - 최상단 이동
 
 
-### https://notepad96.tistory.com/entry/Android-Kotlin-Click-Event
+### https://notepad96.tistory.com/190
 
 
 <br><br>
