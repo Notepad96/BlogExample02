@@ -1,7 +1,7 @@
-# Topic : Button Click Event
+# Topic : Animation Programmatically - Alpha, Scale, Translate
 
 
-### https://notepad96.tistory.com/entry/Android-Kotlin-Click-Event
+### https://notepad96.tistory.com/189
 
 
 <br><br>
