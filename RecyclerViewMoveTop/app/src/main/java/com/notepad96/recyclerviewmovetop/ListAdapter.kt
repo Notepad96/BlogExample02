@@ -9,7 +9,7 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyView>() {
     inner class MyView(private val binding: ItemListBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(pos: Int) {
             binding.mainText.text = "$pos"
-            binding.mainText.text = "${pos * pos}"
+            binding.subText.text = "${pos * pos}"
         }
     }
 
