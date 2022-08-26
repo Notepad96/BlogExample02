@@ -1,11 +1,13 @@
 package com.notepad96.recyclerviewstickyheader
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
 import com.notepad96.recyclerviewstickyheader.databinding.ItemListBinding
 import com.notepad96.recyclerviewstickyheader.databinding.ItemStickyBinding
+
 
 class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.MyView>(){
     companion object {
@@ -18,6 +20,10 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.MyView>(){
         fun bind(position: Int) {
             (binding as ItemListBinding).mainText.text = NAMES[position % 3]
             binding.subText.text = "${position * position}"
+
+            binding.mainText.setOnClickListener {
+                Log.d("myLog", "$position")
+            }
         }
     }
 
