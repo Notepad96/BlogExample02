@@ -10,69 +10,36 @@
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fitsSystemWindows="true"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        android:fitsSystemWindows="true">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="250dp"
+            app:expandedTitleTextColor="@color/white"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            android:fitsSystemWindows="true"
-            app:contentScrim="#444444"
-            app:expandedTitleTextAppearance="@android:color/black">
+            app:contentScrim="#D3D3D3">
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="250dp"
                 android:scaleType="fitXY"
                 app:layout_collapseMode="parallax"
-                android:src="@drawable/image6" />
-
+                android:src="@drawable/sample" />
 
             <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:title="Hello Test~~"
-                app:layout_collapseMode="pin"/>
+                app:title="Today Cafe"
+                app:titleTextColor="@color/white"
+                app:layout_collapseMode="pin" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.core.widget.NestedScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView01"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:background="#456243"
-                android:gravity="center"
-                android:text="TEXT" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:text="TEXT2"
-                android:gravity="center"
-                android:background="#5B6BFF"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:text="TEXT3"
-                android:gravity="center"
-                android:background="#FFC151"
-                />
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
-
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
