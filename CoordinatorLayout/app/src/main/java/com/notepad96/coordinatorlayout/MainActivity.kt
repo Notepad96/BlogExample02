@@ -1,6 +1,10 @@
 package com.notepad96.coordinatorlayout
 
+import android.graphics.Color
+import android.os.Build
 import android.os.Bundle
+import android.view.View
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.notepad96.coordinatorlayout.databinding.ActivityMainBinding
@@ -16,6 +20,6 @@ class MainActivity : AppCompatActivity() {
             adapter = ListAdapter()
             setHasFixedSize(true)
         }
-
     }
+
 }
