@@ -2,6 +2,7 @@ package com.notepad96.apiretrofit
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.notepad96.apiretrofit.databinding.ActivityMainBinding
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         listAdapter = ListAdapter()
 
         binding.btn01.setOnClickListener {
+            Log.d("myLog", "${coinList[0]}")
             listAdapter.setList(coinList)
             listAdapter.notifyDataSetChanged()
         }
