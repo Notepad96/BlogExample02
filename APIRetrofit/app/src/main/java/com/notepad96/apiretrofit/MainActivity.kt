@@ -1,9 +1,8 @@
 package com.notepad96.apiretrofit
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.notepad96.apiretrofit.databinding.ActivityMainBinding
 import retrofit2.Call
@@ -21,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         listAdapter = ListAdapter()
 
         binding.btn01.setOnClickListener {
-            Log.d("myLog", "${coinList[0]}")
             listAdapter.setList(coinList)
             listAdapter.notifyDataSetChanged()
         }
@@ -31,7 +29,10 @@ class MainActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(context)
             setHasFixedSize(true)
         }
+        initList()
+    }
 
+    private fun initList() {
         val call = ApiObject.getRetrofitService.getCoinAll()
         call.enqueue(object: Callback<List<Coin>> {
             override fun onResponse(call: Call<List<Coin>>, response: Response<List<Coin>>) {

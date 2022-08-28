@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.notepad96.apiretrofit.databinding.ItemListBinding
 
 class ListAdapter: RecyclerView.Adapter<ListAdapter.MyView>() {
-    var coinList = listOf<Coin>()
+    private var coinList = listOf<Coin>()
 
     inner class MyView(private val binding: ItemListBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(pos: Int) {
