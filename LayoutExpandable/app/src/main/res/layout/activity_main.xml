@@ -5,29 +5,105 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:animateLayoutChanges="true"
     tools:context=".MainActivity">
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layout01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#FF9341"
         app:strokeWidth="1dp"
-        app:cardCornerRadius="5dp"
+        app:cardCornerRadius="3dp"
         app:strokeColor="@color/black">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Layout"
+            android:layout_gravity="center_vertical"
+            android:text="Layout 01"
+            android:textColor="@color/white"
             android:textSize="22sp" />
-        <TextView
+        <ImageButton
+            android:id="@+id/layoutBtn01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Layout"
+            android:src="@drawable/arrow_up"
+            android:clickable="false"
+            android:background="@android:color/transparent"
             android:layout_gravity="right"
             android:textSize="22sp" />
     </com.google.android.material.card.MaterialCardView>
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layoutDetail01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="#ccc"
+        android:visibility="gone"
+        app:strokeWidth="1dp"
+        app:strokeColor="#aaa">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+            android:textSize="18sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layout02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#6B54CF"
+        app:strokeWidth="1dp"
+        app:cardCornerRadius="3dp"
+        app:strokeColor="@color/black">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="Layout 02"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+        <ImageButton
+            android:id="@+id/layoutBtn02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/arrow_up"
+            android:clickable="false"
+            android:background="@android:color/transparent"
+            android:layout_gravity="right"
+            android:textSize="22sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layoutDetail02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="#ccc"
+        android:visibility="gone"
+        app:strokeWidth="1dp"
+        app:strokeColor="#aaa">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bread" />
+    </com.google.android.material.card.MaterialCardView>
 </LinearLayout>
