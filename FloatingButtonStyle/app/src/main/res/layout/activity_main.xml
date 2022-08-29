@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
+    <!-- Num 1 -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
@@ -22,11 +22,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Num 2 -->
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/extendedFloatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
+
 
         android:drawableRight="@drawable/close_24"
         android:drawableTint="@color/black"
@@ -36,7 +38,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/floatingActionButton" />
 
-
+    <!-- Num 3 -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
         android:layout_width="wrap_content"
@@ -46,21 +48,23 @@
         android:backgroundTint="#5DBA00"
         android:src="@drawable/close_24"
         app:fabSize="mini"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="#f00"
 
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/extendedFloatingActionButton"
-        app:rippleColor="#f00" />
+         />
 
+    <!-- Num 4 -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        style="@style/Custom.Floating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
         android:backgroundTint="#E18EFF"
         android:elevation="30dp"
         android:src="@drawable/close_24"
+        app:shapeAppearanceOverlay="@style/CornerCut"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
