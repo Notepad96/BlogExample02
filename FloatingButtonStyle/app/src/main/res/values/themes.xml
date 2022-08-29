@@ -13,4 +13,13 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="CornerCut" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="Custom.Floating" parent="Widget.Design.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/CornerCut</item>
+    </style>
 </resources>
