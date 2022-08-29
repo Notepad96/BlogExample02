@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:layout_margin="5dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeWidth="1dp"
+        app:cardCornerRadius="3dp"
+        app:strokeColor="@color/black">
+
+        <TextView
+            android:id="@+id/textView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="Layout 01"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+        <ImageButton
+            android:id="@+id/layoutBtn01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/arrow_up"
+            android:clickable="false"
+            android:background="@android:color/transparent"
+            android:layout_gravity="right"
+            android:textSize="22sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/layoutDetail01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="#D8D7D7">
+    </LinearLayout>
+
+</LinearLayout>
