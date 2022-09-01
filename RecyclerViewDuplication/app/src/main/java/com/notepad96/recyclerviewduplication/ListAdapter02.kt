@@ -2,9 +2,7 @@ package com.notepad96.recyclerviewduplication
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.notepad96.recyclerviewduplication.databinding.ItemList01Binding
 import com.notepad96.recyclerviewduplication.databinding.ItemList02Binding
 
 class ListAdapter02(private val data: List<String>, private val parentPos: Int): RecyclerView.Adapter<ListAdapter02.MyView02>() {

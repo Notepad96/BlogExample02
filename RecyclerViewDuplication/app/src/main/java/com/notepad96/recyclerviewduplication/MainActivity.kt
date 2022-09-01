@@ -1,7 +1,7 @@
 package com.notepad96.recyclerviewduplication
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.notepad96.recyclerviewduplication.databinding.ActivityMainBinding
 
