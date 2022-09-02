@@ -7,6 +7,47 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF8989"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        android:src="@drawable/ic_baseline_discord_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF8989"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        android:src="@drawable/ic_baseline_dark_mode_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF8989"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        android:src="@drawable/ic_baseline_code_24" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating01"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:backgroundTint="#FF8989"
@@ -14,6 +55,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="10dp"
         android:layout_marginRight="10dp"
-        app:borderWidth="0dp" />
+        app:borderWidth="0dp"
+        app:maxImageSize="32dp"
+        android:src="@drawable/ic_baseline_add_24" />
 
 </RelativeLayout>
