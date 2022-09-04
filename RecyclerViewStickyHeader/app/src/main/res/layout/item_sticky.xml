@@ -2,10 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
-    app:contentPadding="10dp">
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,5 +23,10 @@
         android:gravity="right"
         android:textSize="22sp"
         android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
 
 </LinearLayout>

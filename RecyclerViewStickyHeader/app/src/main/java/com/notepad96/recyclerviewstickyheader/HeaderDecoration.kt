@@ -2,19 +2,27 @@ package com.notepad96.recyclerviewstickyheader
 
 import android.graphics.Canvas
 import android.graphics.Rect
+import android.view.LayoutInflater
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import com.notepad96.recyclerviewstickyheader.databinding.ItemStickyBinding
 
 
-class HeaderDecoration(private val headerView: View): RecyclerView.ItemDecoration() {
-    override fun onDraw(c: Canvas, parent: RecyclerView, state: RecyclerView.State) {
-        super.onDraw(c, parent, state)
+class HeaderDecoration: RecyclerView.ItemDecoration() {
+    lateinit var binding: ItemStickyBinding
+
+    override fun onDrawOver(c: Canvas, parent: RecyclerView, state: RecyclerView.State) {
+        super.onDrawOver(c, parent, state)
+
         val topView = parent.getChildAt(0) ?: return
-        val topPosition = parent.getChildAdapterPosition(topView)
+        val topViewPos = parent.getChildAdapterPosition(topView)
+        if(topViewPos == RecyclerView.NO_POSITION) return
+
+
 
         c.save()
-        c.translate(0f, 0f)
-        headerView.draw(c)
+        c.translate(0f, 20f)
+        binding.root.draw(c)
         c.restore()
     }
 
@@ -25,10 +33,12 @@ class HeaderDecoration(private val headerView: View): RecyclerView.ItemDecoratio
         state: RecyclerView.State
     ) {
         super.getItemOffsets(outRect, view, parent, state)
+        binding = ItemStickyBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+
         if(parent.getChildAdapterPosition(view) == 0) {
-            headerView.measure(View.MeasureSpec.makeMeasureSpec(parent.measuredWidth, View.MeasureSpec.AT_MOST)
+            binding.root.measure(View.MeasureSpec.makeMeasureSpec(parent.measuredWidth, View.MeasureSpec.AT_MOST)
             , View.MeasureSpec.makeMeasureSpec(parent.measuredHeight, View.MeasureSpec.AT_MOST))
-            outRect.set(0, headerView.measuredHeight, 0, 0)
+            outRect.set(0, binding.root.measuredHeight, 0, 0)
         } else {
             outRect.setEmpty()
         }
