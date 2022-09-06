@@ -12,7 +12,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
 import com.notepad96.alarmservice.databinding.ActivityMainBinding
-import java.util.*
 
 class MainActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
@@ -41,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             if(b) {
-                // 1회성 알림, 10초 후
+                // Case 0: 1회성 알람, 10초 후
                 alarmManager.set(
                     AlarmManager.ELAPSED_REALTIME_WAKEUP,
                     SystemClock.elapsedRealtime() + 1000 * 10,
