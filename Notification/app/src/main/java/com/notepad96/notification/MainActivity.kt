@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         val contents = "Contents Contents Contents Contents Contents Contents Contents " +
                 "Contents Contents Contents Contents Contents Contents Contents "
 
+        // Notification
         var builder01 = NotificationCompat.Builder(this, CHANNEL_ID).apply {
             setSmallIcon(R.drawable.ic_baseline_alarm_24)   // Set Icon
             setContentTitle("Title 1")  // Set Title
@@ -44,6 +45,7 @@ class MainActivity : AppCompatActivity() {
             setAutoCancel(true) // Remove After Click Notification
         }
 
+        // Expandable Notification
         var builder02 = NotificationCompat.Builder(this, CHANNEL_ID).apply {
             setSmallIcon(R.drawable.ic_baseline_alarm_24)
             setContentTitle("Title 2")
