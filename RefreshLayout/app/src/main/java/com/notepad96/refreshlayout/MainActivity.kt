@@ -1,17 +1,17 @@
 package com.notepad96.refreshlayout
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.notepad96.refreshlayout.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
-    var count01 = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        var count01 = 0
         var count02 = 0
 
         binding.button01.setOnClickListener {
@@ -23,9 +23,6 @@ class MainActivity : AppCompatActivity() {
             count02 += 10
         }
 
-        binding.refreshLayout.setOnChildScrollUpCallback { parent, child ->
-            false
-        }
 
         binding.refreshLayout.setOnRefreshListener {
             count01 = 0
