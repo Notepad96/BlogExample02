@@ -1,7 +1,7 @@
-# Topic : Button Click Event
+# Topic : RecyclerView + SwipeRefreshLayout
 
 
-### https://notepad96.tistory.com/entry/Android-Kotlin-Click-Event
+### https://notepad96.tistory.com/207
 
 
 <br><br>
