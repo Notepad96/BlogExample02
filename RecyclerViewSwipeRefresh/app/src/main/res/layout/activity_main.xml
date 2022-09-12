@@ -25,6 +25,12 @@
             android:text="Remove" />
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginVertical="5dp"
+        android:background="@color/black" />
+
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/refreshLayout01"
         android:layout_width="match_parent"
