@@ -5,9 +5,9 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
 import com.notepad96.alarmnotification.databinding.ActivityMainBinding
 
