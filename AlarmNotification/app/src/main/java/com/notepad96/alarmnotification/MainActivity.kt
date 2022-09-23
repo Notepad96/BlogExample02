@@ -4,13 +4,16 @@ import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
+import androidx.core.content.edit
 import com.notepad96.alarmnotification.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+    lateinit var setting: SharedPreferences
 
     companion object {
         const val REQUEST_CODE = 101
@@ -23,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         view.instance = this
+        setting = getSharedPreferences("setting", MODE_PRIVATE)
+        binding.switch01.isChecked = setting.getBoolean("alarm", false)
 
         val alarmManager = binding.root.context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val pendingIntent = Intent(binding.root.context, MyAlarmReceiver::class.java).let {
@@ -31,7 +36,10 @@ class MainActivity : AppCompatActivity() {
             PendingIntent.getBroadcast(binding.root.context, REQUEST_CODE, it, 0)
         }
 
-        binding.switch01.setOnCheckedChangeListener { btn, isCheck ->
+        binding.switch01.setOnCheckedChangeListener { _, isCheck ->
+            setting.edit {
+                putBoolean("alarm", isCheck)
+            }
             if(isCheck) {
                 alarmManager.set(
                     AlarmManager.ELAPSED_REALTIME_WAKEUP,
