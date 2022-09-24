@@ -11,12 +11,22 @@ import com.notepad96.paletteapi.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+    private val images = listOf(R.drawable.sample, R.drawable.bread, R.drawable.cat)
+    var count = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        setImage(count)
 
-        val palette = createPaletteSync(BitmapFactory.decodeResource(resources, R.drawable.sample))
+        binding.changeImg.setOnClickListener {
+            setImage(++count % 3)
+        }
+    }
+    private fun setImage(count: Int) {
+        binding.imageView01.setImageResource(images[count])
+
+        val palette = createPaletteSync(BitmapFactory.decodeResource(resources, images[count]))
 
         setColor(binding.textColor01, palette.lightVibrantSwatch)
         setColor(binding.textColor02, palette.vibrantSwatch)

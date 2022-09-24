@@ -7,7 +7,15 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changeImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="Image Change"/>
+
     <ImageView
+        android:id="@+id/imageView01"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:scaleType="fitXY"
