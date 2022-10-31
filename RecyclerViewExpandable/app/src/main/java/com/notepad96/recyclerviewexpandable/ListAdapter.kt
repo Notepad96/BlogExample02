@@ -1,5 +1,6 @@
 package com.notepad96.recyclerviewexpandable
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,6 +43,14 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyView>() {
                     textSize = 20f
                     setPadding(10, 10, 5, 10)
                 }
+
+                val intent = Intent(binding.root.context, DetailActivity::class.java)
+                    .putExtra("name", view.text.toString())
+
+                view.setOnClickListener {
+                    binding.root.context.startActivity(intent)
+                }
+
                 binding.layoutDetail01.addView(view)
             }
         }
