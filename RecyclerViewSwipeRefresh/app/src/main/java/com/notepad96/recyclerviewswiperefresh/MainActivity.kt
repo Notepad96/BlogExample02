@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         binding.btnAdd.setOnClickListener {
             Toast.makeText(applicationContext, "Add Item", Toast.LENGTH_SHORT).show()
             listAdapter.addItem()
-            listAdapter.notifyItemInserted()
         }
         binding.btnRemove.setOnClickListener {
             Toast.makeText(applicationContext, "Remove Item", Toast.LENGTH_SHORT).show()

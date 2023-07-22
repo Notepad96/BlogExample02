@@ -1,5 +1,6 @@
 package com.notepad96.refreshlayout
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             count02 += 10
         }
 
+        binding.refreshLayout.setColorSchemeResources(R.color.purple_200, R.color.purple_500, R.color.teal_200)
 
         binding.refreshLayout.setOnRefreshListener {
             count01 = 0

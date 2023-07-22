@@ -15,6 +15,7 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyView>() {
         "에이드" to listOf("레몬에이드", "자몽에이드"),
         "음료" to listOf("나랑드", "토레타")
     )
+    val data2 = arrayListOf<String>()
 
     inner class MyView(private val binding: ItemListBinding): RecyclerView.ViewHolder(binding.root) {
         init {

@@ -8,6 +8,7 @@ import com.notepad96.apiretrofit.databinding.ActivityMainBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import retrofit2.await
 
 class MainActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
@@ -20,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         listAdapter = ListAdapter()
 
         binding.btn01.setOnClickListener {
+            initList()
+            Toast.makeText(applicationContext, "List Update", Toast.LENGTH_SHORT).show()
             listAdapter.setList(coinList)
             listAdapter.notifyDataSetChanged()
         }
@@ -40,6 +43,7 @@ class MainActivity : AppCompatActivity() {
                 if(response.isSuccessful) {
                     coinList = response.body() ?: listOf()
                     listAdapter.setList(coinList)
+                    listAdapter.notifyDataSetChanged()
                 }
             }
 
@@ -47,6 +51,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, "Call Failed", Toast.LENGTH_SHORT).show()
             }
         })
+
     }
 
 }
